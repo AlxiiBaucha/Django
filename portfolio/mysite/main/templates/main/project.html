@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Project{% endblock %}
+{% block content %}
+<h1>projects</h1>
+<ul>
+
+  {% for project in projects %}
+    <li><a href="{% url 'projects' project.id %}">{{ project.title }} ({{ project.date }})</a></li>
+    <li>{{project.description}}</li>
+  {% empty %}
+    <li>No projects available.</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

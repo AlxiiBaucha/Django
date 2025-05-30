@@ -1,0 +1,10 @@
+python -m venv env
+env\Scripts\activate
+pip list
+pip install Django
+pip list
+django-admin --version
+django-admin startproject "projectname"
+cd project name
+python manage.py runserver
+python manage.py startapp homepage
