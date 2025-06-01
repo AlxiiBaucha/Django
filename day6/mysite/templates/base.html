@@ -4,6 +4,7 @@
 <head>
     <title>{% block title %}Portfolio{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 <body>
 
@@ -13,9 +14,11 @@
         <a href="{% url 'skills' %}">Skills</a>
         <a href="{% url 'project' %}">Project</a>
         <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'forms' %}">Form</a>
+
     </nav>
     <main>
         {% block content %}{% endblock %}
-    </main>
+    <!-- </main> -->
 </body>
 </html>

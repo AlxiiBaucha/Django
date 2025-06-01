@@ -71,4 +71,4 @@ def show_feeedback(request):
     context={
         "form":feeds
     }
-    return render(request,'main/showall.html',context)
+    return render(request,'main/showall.html',context)b

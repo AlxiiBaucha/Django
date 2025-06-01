@@ -5,9 +5,21 @@ urlpatterns = [
     path('', home, name='home'),
     path('about/', about, name='about'),
     path('skills/', skills, name='skills'),
-    path('project/',project, name='project'),
     path('contact/', contact, name='contact'),
+    path('project/',project, name='project'),
     path('project/<int:id>/', project_detail, name='projects'),
+    path('form/', form ,name='forms'),
+    path('feedback/', show_feedback, name='feedback'),
+    path('formas/', show_form, name='form'),
+
+
+
+
+
+
+
+
+
 ]
 
 
